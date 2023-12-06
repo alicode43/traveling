@@ -1,0 +1,339 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Header */
+
+.header{
+    height: 80vh; 
+    width: 100%;
+    background-image: url('./images/bg.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.contact-details{
+    display: flex;
+    background-color: purple;
+    padding: 10px;
+    color: white;
+}
+.contact-details span{
+      margin-right: 20px;
+
+  }
+  
+
+/*  Navbar */
+
+  .navbar {
+    background-color: transparent;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .brand {
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold;
+  }
+  .brand span{
+    color: purple;
+  }
+  
+  .nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px;
+  }
+  
+  .nav-links a:hover {
+    border-bottom: 2px solid white;
+  }
+
+
+  .tagline{
+    margin-top: 20vh;
+    /* margin-left:  30vw; */
+    /* align-items: center; */
+    justify-content: center;
+}
+  .tagline h1{
+    font-size: 3em;
+    color: rgb(169, 237, 226);
+    font-weight: bold;
+    text-align: center;
+    /* align-items: center; */
+    margin: 0;
+    
+    font-size: 50px;
+   
+  }
+  .tagline p{
+    font-size: 1em;
+    margin-left: 150px;
+    color: rgb(169, 54, 54);
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+    /* align-items: center; */
+    
+    /* margin-top: 200px;
+    margin-left: 200px; */
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+.features {
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+.feature.img{
+    border-radius: 25px;
+
+    padding: 20px;
+ 
+    /* box-shadow: 20px -60px 0px 0px  rgba(128, 0, 128, 0.5) inset; */
+    box-shadow: 0px 0px 10px 20px 5px rgba(92, 13, 13, 0.8) inset;
+    color: #007BFF;
+    height: 600px; /* 80% of the viewport height */
+    width: 400px;
+    background-image: url("./images/product.jpg");
+    background-size: cover; /* Adjust the background image size to cover the entire div */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; 
+    margin: 10px;
+}
+.deals{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    border-top: 0;
+}
+
+
+
+.feature.text{
+    border-radius: 25px;
+    height: 600px; 
+    width: 400px;
+    /* background-image: url("./images/product.jpg"); */
+}
+.feature.text h1{
+
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    align-items: center;
+}
+.feature.text p{
+
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    align-items: center;
+}
+
+
+.features {
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+.feature.img{
+    border-radius: 25px;
+
+    padding: 20px;
+ 
+    /* box-shadow: 20px -60px 0px 0px  rgba(128, 0, 128, 0.5) inset; */
+    box-shadow: 0px 0px 10px 20px 5px rgba(92, 13, 13, 0.8) inset;
+    color: #007BFF;
+    height: 600px; /* 80% of the viewport height */
+    width: 400px;
+    background-image: url("./images/product.jpg");
+    /* box-shadow: inset 0px -56px 0px rgba(111, 13, 153, 0.688); */
+    box-shadow:inset 0px -136px 80px 0px rgba(4, 60, 128, 1);
+    z-index: 1;
+    
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat; 
+    margin: 10px;
+}
+
+
+
+.feature.text{
+    border-radius: 25px;
+    height: 600px; 
+    width: 400px;
+  
+}
+.feature.text h1{
+
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    align-items: center;
+}
+.feature.text p{
+
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    align-items: center;
+}
+
+
+
+
+
+/* hot deals */
+
+.deals h1{
+    color: black;
+}
+  
+  .grid {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-items: start;
+  }
+
+  .grid__item {
+    background-color: #fff;
+    /* width: 20vw; */
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+  }
+ 
+  .card img {
+    display: block;
+    width: 80%;
+    height: 18rem;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+ 
+  .card__content h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #0d0d0d;
+    margin-bottom: 1.5rem;
+  }
+  .card__content p {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+    color: #3d3d3d;
+    margin-bottom: 2.5rem;
+  }
+
+ 
+
+
+/* Footer */
+
+#footer
+*{
+    margin:0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1170px;
+    background-color: red;
+    margin:auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+    padding-left: 10px;
+}
+.footer{
+ 
+    padding: 70px 15px;
+}
+.footer-col{
+    width: 20%;
+    padding: 0 ;
+}
+.footer-col h4{
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    padding-left:10px ;
+
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing:border-box;
+    width: 40px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+   
+    text-decoration: none;
+    font-weight: 300;
+   
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+ 
+    padding-left: 8px;
+}
+.social-link{
+    display: flex;
+}
+.social-link a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(128, 4, 4, 0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+.social-links a:hover{
+    color: #24262b;
+    background-color: #0c0c0c;
+}
+
