@@ -452,10 +452,6 @@ grid-container {
 
 /* destination */
 
-/* .destination{
-
-
-} */
 
 
 button {
@@ -465,6 +461,7 @@ button {
   gap: 100px;
 }
 city {
+  border: 3px solid black;
 justify-content:center ;
 }
 
