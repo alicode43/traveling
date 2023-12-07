@@ -15,6 +15,9 @@ body {
   text-align: center;
   color: black;
 }
+.btn{
+  border-radius: 10px;
+}
 /* Header */
 
 .header{
@@ -340,21 +343,21 @@ body {
   grid-template-columns: repeat(4, 1fr);
   /* grid-template-columns:4, 1fr; */
   /* grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); */
-  align-items: start;
+  align-items: center;
 }
 
-.gridItem {
-  background-color: #fff;
+.card {
+  
   /* width: 20vw; */
   border-radius: 0.4rem;
   overflow: hidden;
-  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1); */
   cursor: pointer;
 
 }
 
 .card img {
-  display: block;
+  /* display: block; */
   width: 80%;
   height: 18rem;
   object-fit: cover;
@@ -368,17 +371,12 @@ body {
 }
 
 .card__content h1 {
-  font-size: 3rem;
-  font-weight: 500;
-  color: #0d0d0d;
-  margin-bottom: 1.5rem;
+  font-size: 22px;
+  font-weight: 600;
 }
 .card__content p {
-  font-size: 1.5rem;
-  letter-spacing: 0.1rem;
-  line-height: 1.7;
-  color: #3d3d3d;
-  margin-bottom: 2.5rem;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 
@@ -434,8 +432,13 @@ body {
 .offerText{
   margin-left: 2vw;
   position: relative;
-  top: 35vh;
+  top: 219px;
+
 }
+
+
+
+
 
 /* destination */
 
@@ -447,35 +450,48 @@ button {
   font-size: 16px;
   gap: 100px;
 }
-city {
-  border: 3px solid black;
+.city {
+  border: 1px solid #a706f8;
 justify-content:center ;
+/* border: 1px solid black; */
 }
 
 /* Define the grid container */
 .gridContainer2 {
 display: grid;
-grid-template-rows: repeat(3, 100px); /* Three rows, each 100px tall */
-grid-template-columns: repeat(3, 1fr); /* Three columns, each taking 1 fraction of the available space */
-gap: 10px;
+grid-template-rows: repeat(2, 100px); 
+grid-template-columns: repeat(3, 1fr); 
 /* background-color: blue; */
+margin: 44px 130px 44px 130px;
+gap: 28px 96px;
 }
 
 .gridChild {
-background-color: aqua;
+/* background-color: aqua; */
 display: grid;
 grid-template-columns: 1fr 3fr;
 /* border-radius: 10px 10px; */
 }
 .child1{
-background-color: red;
+/* background-color: red; */
 background-size: cover;
 background-image: url(https://contile-images.services.mozilla.com/Lbtwp8lOwiYh9vxiwPInJ_U7mlWtWHU5_yHpcziM01U.10324.jpg);
 border-radius: 10px 0px 0px 10px;
-} .child1{
+} 
+/* .child1{
 background-color: rgb(255, 5, 5)(255, 242, 0);
-}
+} */
 
+.child2{
+  position: relative;
+  top: 25px;
+  left: 10px;
+  text-align: left;
+}
+.child2 b{
+  font-size: 22px;
+  font-weight: 400;
+}
 .grid-item {
 border: 1px solid black;
 
