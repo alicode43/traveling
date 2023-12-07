@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;  
-    font-family: "";  
+    font-family: 'Inter', sans-serif;
 }
 .color{
   color: #a706f8;
@@ -14,6 +14,11 @@ body {
   
   text-align: center;
   color: black;
+}
+hr{
+  height: 2px;
+    background-color:  #a706f8;
+    /* width: 100px; */
 }
 /* Header */
 
@@ -28,9 +33,18 @@ body {
 
 .contact-details{
     display: flex;
+    flex-direction: row;
+    justify-content: end;
     background-color: purple;
     padding: 10px;
     color: white;
+}
+.logo{
+  background-image: url("https://images.all-free-download.com/images/graphiclarge/purple_airplane_icon_vector_280729.jpg");
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
 }
 .contact-details span{
       text-align: right;
@@ -53,16 +67,22 @@ body {
     font-size: 1.5em;
     color: black;
     font-weight: bold;
+    padding-left: 40px;
+    font-size: 30px;
   }
   .brand span{
     color: purple;
   }
-  
+  .nav-links{
+    padding-right: 40px;
+  }
   .nav-links a {
     color: rgb(0, 0, 0);
     text-decoration: none;
     margin-left: 20px;
     padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
   }
   
   .nav-links a:hover {
@@ -113,7 +133,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 100px;
+    margin: 60px ;
+    
 }
 .feature.img{
     border-radius: 25px;
@@ -146,9 +167,10 @@ body {
     border-radius: 25px;
     height: 600px; 
     width: 400px;
+    
     /* background-image: url("./images/product.jpg"); */
 }
-.feature.text h1{
+/* .feature.text h1{
 
     font-size: 50px;
     color: rgb(0, 0, 0);
@@ -159,7 +181,8 @@ body {
     font-size: 20px;
     color: rgb(0, 0, 0);
     align-items: center;
-}
+    font-size: 19px;
+} */
 
 
 .features {
@@ -209,6 +232,7 @@ body {
     font-size: 20px;
     color: rgb(0, 0, 0);
     align-items: center;
+    font-size: 19px;
 }
 
 
@@ -222,7 +246,7 @@ body {
 
   /* Top destinations */
 
-  .grid-container {
+  .topDistanceContainer {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -232,11 +256,11 @@ body {
      height: 100vh;   
      background-size: cover; 
      
-     margin: 30px ;   
+     margin: 20px ;   
 }
-grid-container {
+/* grid-container {
     align-content: stretch; 
-  }
+  } */
 
 .grid-item1 {
     /* background-color: #0c0c0c; */
