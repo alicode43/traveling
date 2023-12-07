@@ -18,15 +18,16 @@ body {
 .btn{
   border-radius: 10px;
 }
+.btn:hover{
+  background-color: #a706f8;
+}
 /* Header */
 
 .header{
     height: 80vh; 
     width: 100%;
-    background-image: url('./images/bg.jpg');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background: url('./images/bg.jpg')  center/cover no-repeat;
+
 }
 
 .contact-details{
@@ -198,47 +199,23 @@ body {
 
   .topDestinationContainer {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-
-
-
-    /* grid-template-columns: repeat(2, 1fr); */
-
-    gap: 0px; /* Adjust as needed */
-    padding: 0px; /* Adjust as needed */
-     width: 98%;
-     height: 100vh;   
-     background-size: cover; 
-     
-     margin: 20px ;   
+    grid-template-columns: 3fr 1fr 1fr 1fr; 
+    gap: 30px; 
+    padding: 30px;
+    margin: 20px ;   
 }
 
 
-.grid-item1 {
+.topDestinationItem1 {
     
-    padding: 250px;
-    width: 40vh;
+    
     text-align: center;
-    background-image: url("./images/torism.jpg");
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background: url("./images/torism.jpg") center/cover no-repeat;
     border-radius: 25px;
     
 }
 
-.grid-item2 {
-    padding: 20px;
-    justify-content: space-evenly;
-    width: 25vh;   
-}
 
-/* .grid2 {
-    padding: 20px;
-    justify-content: space-evenly;
-    width: 25vh;   
-} */
 
 
 .grid-item3 {
@@ -247,29 +224,21 @@ body {
     height: 154px;
     margin-bottom: 21px;
     border-radius: 13px;
-    background-image: url("./images/sea.jpg");
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background: url("./images/sea.jpg")  center/cover no-repeat;
    
-}.grid-item4 {
+}
+.grid-item4 {
     height: 154px;
     margin-bottom: 21px;
     border-radius: 13px;
-    background-image: url("./images/sea.jpg");
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background: url("./images/sea.jpg")  center/cover no-repeat;
     padding: 33px;
 }
 .grid-item5 {
-    height: 300px;
+    height: 320px;
     margin-bottom: 21px;
     border-radius: 13px;
-    background-image: url("./images/sea.jpg");
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background: url("./images/sea.jpg")  center/cover no-repeat;
     padding: 34px;
 }
 
@@ -278,28 +247,20 @@ body {
     height: 154px;
     margin-bottom: 21px;
     border-radius: 13px;
-    background-image: url("./images/sea.jpg");
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background: url("./images/sea.jpg")  center/cover no-repeat;
+
     padding: 34px;
 }
  .grid-item9 {
     height: 154px;
     margin-bottom: 21px;
     border-radius: 13px;
-    background-image: url("./images/sea.jpg");
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background: url("./images/sea.jpg")  center/cover no-repeat; 
     padding: 34px;
 }
 
 .grid-item10 {
-    background-image: url("./images/tajmahals.jpg");
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background: url("./images/tajmahals.jpg")  center/cover no-repeat;
     height: 300px;
     margin-bottom: 21px;
     border-radius: 13px;
@@ -332,7 +293,7 @@ body {
 /* hot deals */
 
 .hotDeals{
-  margin-top: 200px;
+  margin-top: 50px;
   margin-left: 65px;
 }
 
@@ -341,30 +302,28 @@ body {
   
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* grid-template-columns:4, 1fr; */
-  /* grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); */
+
   align-items: center;
 }
 
 .card {
   
-  /* width: 20vw; */
+
   border-radius: 0.4rem;
   overflow: hidden;
-  /* box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1); */
   cursor: pointer;
 
 }
 
 .card img {
-  /* display: block; */
+
   width: 80%;
   height: 18rem;
   object-fit: cover;
   border-radius: 20px;
 }
 .location{
-  /* background-image: url("./images/deal.jpg"); */
+
   position: relative;
   left: 20px;
   bottom: 55px;
@@ -394,15 +353,13 @@ body {
 }
 .first{
   position: relative;
-  background-image: url("./images/passport.jpg")   ;
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
+  background: url("./images/passport.jpg") center/cover no-repeat;
+
   border-radius: 20px;
 }
 
 .second{
-  background-image: url("./images/mountain_travellers.jpg");
+  background: url("./images/mountain_travellers.jpg")  center/cover no-repeat;
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
@@ -410,10 +367,7 @@ body {
 }
 
 .third{
-  background-image: url("./images/mountain_travellers.jpg");
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
+  background: url("./images/mountain_travellers.jpg")  center/cover no-repeat;
   border-radius: 20px;
   
 }
