@@ -52,23 +52,24 @@
       
       <div class="flight-container">
         <div id="button-align">
-          <div class="flight">
-            <div class="flight-box">
+          <div class="flight btnBorder">
+            <div class="flight-box ">
               <i class="fa-solid fa-plane-departure"></i>&nbsp;
-              <span > Flights</span>
+              <span  class=""> Flights</span>
             </div>
         </div>
-          <div class="flight" id="hotel-box">
+          <div class="flight btnBorder" id="hotel-box">
             <div class="flight-box">
               <i class="fa-sharp fa-solid fa-hotel"></i> &nbsp;
-              <span>Hotels</span>
+              <span >Hotels</span>
             </div>
         </div>
         </div>
+
         <div>
           <div>
-            <ul class="no-bullets" id="content-align">
-              <li class="color">One Way</li>
+            <ul class="trip" id="content-align">
+              <li >One Way</li>
               <li>Roundtrip</li>
               <li>Multi City</li>
             </ul>
@@ -98,7 +99,7 @@
            <input class="flightInputMid" type="text" name="" id="" value="New York">
           
            <div>
-            <p class="flightInputBottom">JFK-john F.kennedy international</p>
+            <p class="flightInputBottom flightInputBottomLeft">JFK-john F.kennedy international</p>
            </div>
       
         </div>
@@ -116,24 +117,26 @@
             </span>
             <input  class="flightInputMid" type="text" name="" id="" value="London">
             <div>
-             <p class="flightInputBottom">LCY,London city airport</p>
+             <p class="flightInputBottom flightInputBottomLeft">LCY,London city airport</p>
             </div>
       
          </div>
          <div class="date">
             <span class="flightInputTop">Journey date  </span>
-                <span class="flightInputTop">Journey date</span>
-            <div >
-               <span> <input class="flightInputMid" type="date" id="dateInput"  name="dateInput"> <input  class="flightInputMid" type="date" id="dateInput2" name="dateInput"></span>
-                <span>     </span>
+                <span class="flightInputTop jleft ">Journey date</span>
+          
+               <span> <input class="flightInputMid dateInput" type="date" id="dateInput"  name="dateInput"> <input  class="flightInputMid" type="date" id="dateInput2" name="dateInput"></span>
+                <!-- <span>     </span> -->
            
-            <div>
-           <span class="flightInputBottom day" > Friday</span>&nbsp;<span class="flightInputBottom day-right" >Friday</span>
+              <span class="dayMargin">
+
+                <span class="flightInputBottom day" > Friday</span>&nbsp;<span class="flightInputBottom day-right" >Friday</span>
+              </span>
            
              
-            </div>
+       
       
-         </div>
+     
         </div>
          <div class="passenger">
             <span class="flightInputTop">Passenger,Class</span>
@@ -142,7 +145,7 @@
             <p  class="flightInputMid">0 Passenger</p>
             </div>
             <div>
-           <span class="flightInputBottom"> Economy</span>
+           <span class="flightInputBottom flightInputBottomLeft"> Economy</span>
            
              
             </div>

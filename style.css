@@ -19,6 +19,29 @@ body {
 .btn:hover {
   background-color: #a706f8;
 }
+.btn2 {
+  font-size: 15px;
+  color: white;
+  height: 2.5rem;
+  width: 10rem;
+  border-radius: 5px;
+  border-style: none;
+  cursor: pointer;
+}
+.btnBorder{
+  border: 1px solid rgba(128, 0, 128, 0.481);;
+}
+.btnBorder:hover{
+  color: white;
+  background-color: #a706f8;
+}
+.nav-links a:hover{
+  color: #a706f8;
+}
+.trip li:hover{
+  color: #a706f8;
+  cursor: pointer;
+}
 /* Header */
 
 .header {
@@ -131,14 +154,14 @@ body {
 .flight {
   height: 50px;
   width: 110px;
-  background-color: blanchedalmond;
+  background-color:rgba(128, 0, 128, 0.06);
   border-radius: 5px;
   margin-left: 20px;
 }
 .flight-box {
   text-align: center;
   position: relative;
-
+  /* border: 1px solid rgba(128, 0, 128, 0.481);; */
   top: 15px;
   cursor: pointer;
 }
@@ -147,7 +170,7 @@ body {
   /* margin-left: 140px; */
 }
 
-.no-bullets {
+.trip {
   list-style-type: none;
   margin-top: 20px;
   margin-right: 20px;
@@ -169,11 +192,12 @@ ul li {
   justify-content: start;
   flex-direction: row;
   margin-top: 20px;
+  /* border: 1px solid rgba(128, 0, 128, 0.481);; */
 }
 .flight-check {
   height: 110px;
   width: 265px;
-  background-color: blanchedalmond;
+  background-color: rgba(128, 0, 128, 0.06);
 
   border-radius: 10px;
 }
@@ -198,18 +222,26 @@ ul li {
   padding-left: 80px;
 }
 .flightInputMid {
-  margin-top: 10px;
+  margin-top: 12px;
   font-weight: 700;
   padding-left: 10px;
   font-family: "Inter", sans-serif;
 }
 .flightInputBottom {
  font-weight: 300;
+ margin-top: 8px
 }
+.flightInputBottomLeft {
+margin-left: 10px;
+ }
+.jleft{
+  margin-left: 87px;
+}
+
 .date {
   height: 110px;
   width: 399px;
-  background-color: blanchedalmond;
+  background-color: rgba(128, 0, 128, 0.06);;
 
   border-radius: 10px;
 }
@@ -261,7 +293,7 @@ ul li {
 .passenger {
   height: 110px;
   width: 250px;
-  background-color: blanchedalmond;
+  background-color: rgba(128, 0, 128, 0.06);
   margin-left: 20px;
   border-radius: 10px;
   margin-right: 20px;
@@ -288,7 +320,7 @@ ul li {
   top: 30px;
 }
 input {
-  background-color: blanchedalmond;
+  background-color: rgba(128, 0, 128, 0);;
   border: none;
   font-size: 20px;
 }
@@ -500,14 +532,7 @@ input {
   background: url("./images/mountain_travellers.jpg") center/cover no-repeat;
   border-radius: 20px;
 }
-.btn2 {
-  font-size: 15px;
-  color: white;
-  height: 2.5rem;
-  width: 10rem;
-  border-radius: 5px;
-  border-style: none;
-}
+
 .offer-h1 {
   position: relative;
   color: #ffffff;
