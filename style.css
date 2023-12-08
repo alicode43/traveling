@@ -175,7 +175,7 @@ body {
   margin-top: 20px;
   margin-right: 20px;
 }
-ul li {
+.trip li {
   font-size: 20px;
   display: inline;
   margin-left: 23px;
@@ -393,7 +393,7 @@ input {
 
 .topDestinationItem1 {
   text-align: center;
-  background: url("./images/torism.jpg") center/cover no-repeat;
+  background: url("/images/tourism.jpg") center/cover no-repeat;
   border-radius: 25px;
 }
 
@@ -475,16 +475,21 @@ input {
   grid-template-columns: repeat(4, 1fr);
 
   align-items: center;
+  gap: 30px;
+  /* padding-right: 10px; */
+  padding-right: 82px;
 }
 
 .card {
   border-radius: 0.4rem;
   overflow: hidden;
   cursor: pointer;
+  box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.25);
 }
 
 .card img {
-  width: 80%;
+  /* width: 80%; */
+  width: fit-content;
   height: 18rem;
   object-fit: cover;
   border-radius: 20px;
@@ -603,7 +608,84 @@ background-color: rgb(255, 5, 5)(255, 242, 0);
   grid-gap: 30px;
 }
 
-/* Footer */
+/* news  ***********************************************************************************************************************************************/
+.news{
+  margin-bottom: 293px;
+  padding: 40px;
+}
+hr{
+  position: relative;
+  top: -13px;
+  height: 1px;
+
+  width: 15vw;
+  position: relative;
+  bottom: 25px;
+  background-color: #a706f8;
+}
+.heading1{
+  text-align: center;
+  font: size 72px; 
+  position: relative;
+   
+}
+/* h1::after{
+  content: "";
+  position: absolute;
+ 
+  height: 4px;
+  width: 100%;
+  left: 10;
+  right: 0;
+  background-color: rgb(165, 42, 144); */
+
+.heding7{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.newsGrid1 img{
+ border-radius: 12px;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 0px;
+}
+div.newsImages2{
+
+}
+.newsImages3{
+  height: 350px;
+  width: 800px;
+  border-radius: 20px;
+}
+
+
+.newsGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 200px;
+  gap: 10px;
+}
+.newsGrid1{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: 120px;
+  gap: 5px;
+}
+.newsImages{
+  background-color:w;
+} 
+
+.newsImages2{
+  /* background-color: rgb(133, 206, 206); */
+  height: 100px;
+
+}
+.text{
+  display: inline;
+}
+/* Footer ***********************************************************************************************************************************/
 
 #footer * {
   margin: 0;
