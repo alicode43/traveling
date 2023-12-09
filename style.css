@@ -42,7 +42,14 @@ body {
   color: #a706f8;
   cursor: pointer;
 }
-/* Header */
+/* input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+} */
+
+
+
+
+/* Header **************************************************************************************************************************************************************/
 
 .header {
   height: 80vh;
