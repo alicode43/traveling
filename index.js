@@ -1,30 +1,44 @@
-function getCurrentDate() {
-    const now = new Date();
-    const year = now.getFullYear();
-    const month = (now.getMonth() + 1).toString().padStart(2, '0');
-    const day = now.getDate().toString().padStart(2, '0');
-    return `${year}-${month}-${day}`;
+function getDayOfWeek(date) {
+  const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const dayIndex = date.getDay();
+  return daysOfWeek[dayIndex];
 }
-  console.log(getCurrentDate());
-  console.log(getCurrentDate());
 
-document.getElementById('dateInput').value = getCurrentDate();
-document.getElementById('dateInput2').value = getCurrentDate();
-var inputDate = document.getElementById('dateInput').value;
+// Function to update the displayed day when the date changes
+function updateDay(inputType) {
+  const startDateInput = document.getElementById('dateInput');
+  const endDateInput = document.getElementById('dateInputReturn');
+  
+  const startResultElement = document.getElementById('day');
+  const endResultElement = document.getElementById('returnDay');
+  console.log(endResultElement.value);
 
-   
-// var date = new Date(getCurrentDate());
+  const startDate = startDateInput.value ? new Date(startDateInput.value) : new Date();
+  const endDate = endDateInput.value ? new Date(endDateInput.value) : new Date();
+
+  // Get the days of the week
+  const startDayOfWeek = getDayOfWeek(startDate);
+  const endDayOfWeek = getDayOfWeek(endDate);
+
+ 
+  startResultElement.textContent = `${startDayOfWeek}`;
+  endResultElement.textContent = `${endDayOfWeek}`;
+}
 
 
-//       var dayOfWeek = date.getDay();
+// Set the default dates and update the days on page load
+document.addEventListener('DOMContentLoaded', () => {
+  const startDateInput = document.getElementById('dateInput');
+  const endDateInput = document.getElementById('dateInputReturn');
 
+  const today = new Date().toISOString().split('T')[0];
+  
 
+  startDateInput.value = today;
+  endDateInput.value = today;
 
-
-//       var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
-//       // Get the day name using the array
-//       var dayName = daysOfWeek[dayOfWeek];
-
-//       // Display the result
-//       alert('The day is: ' + dayName);
+  const start= updateDay('startDate');
+  const end=updateDay('endDate');
+  // console.log(start,end);
+  
+});

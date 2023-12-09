@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date Day Display</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <label for="startDateInput">Select start date:</label>
+  <input type="date" id="startDateInput" onchange="updateDay('startDate')">
+  
+  <br>
+  
+  <label for="endDateInput">Select end date:</label>
+  <input type="date" id="endDateInput" onchange="updateDay('endDate')">
+  
+  <p id="startResult">Start day will be displayed here</p>
+  <p id="endResult">End day will be displayed here</p>
+
+  <script>
+    // Function to get the day of the week from a given date
+    function getDayOfWeek(date) {
+      const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      const dayIndex = date.getDay();
+      return daysOfWeek[dayIndex];
+    }
+
+    // Function to update the displayed day when the date changes
+    function updateDay(inputType) {
+      const startDateInput = document.getElementById('startDateInput');
+      const endDateInput = document.getElementById('endDateInput');
+      
+      const startResultElement = document.getElementById('startResult');
+      const endResultElement = document.getElementById('endResult');
+      
+      // Get the selected dates or use today's date if not selected
+      const startDate = startDateInput.value ? new Date(startDateInput.value) : new Date();
+      const endDate = endDateInput.value ? new Date(endDateInput.value) : new Date();
+
+      // Get the days of the week
+      const startDayOfWeek = getDayOfWeek(startDate);
+      const endDayOfWeek = getDayOfWeek(endDate);
+
+      // Display the results
+      startResultElement.textContent = `Start day: ${startDayOfWeek}`;
+      endResultElement.textContent = `End day: ${endDayOfWeek}`;
+    }
+
+    // Set the default dates and update the days on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      const startDateInput = document.getElementById('startDateInput');
+      const endDateInput = document.getElementById('endDateInput');
+      
+      // Get today's date in the format "YYYY-MM-DD"
+      const today = new Date().toISOString().split('T')[0];
+      
+      // Set the default dates to today
+      startDateInput.value = today;
+      endDateInput.value = today;
+      
+      // Update the days
+      updateDay('startDate');
+      updateDay('endDate');
+    });
+  </script>
+
+</body>
+</html>

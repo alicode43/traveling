@@ -126,12 +126,12 @@
             <span class="flightInputTop">Journey date  </span>
                 <span class="flightInputTop jleft ">Journey date</span>
           
-               <span> <input class="flightInputMid dateInput" type="date" id="dateInput"  name="dateInput"> <input  class="flightInputMid" type="date" id="dateInput2" name="dateInput"></span>
-                <!-- <span>     </span> -->
+               <span> <input class="flightInputMid dateInput" type="date" id="dateInput"  name="dateInput" onchange="updateDay()"> <input  class="flightInputMid" type="date" id="dateInputReturn" name="dateInput" onchange="updateDay()"></span>
+               
            
               <span class="dayMargin">
 
-                <span class="flightInputBottom day" > Friday</span>&nbsp;<span class="flightInputBottom day-right" >Friday</span>
+                <span id="day" class="flightInputBottom day" > Friday</span>&nbsp;<span id="returnDay" class="flightInputBottom day-right" >Friday</span>
               </span>
            
              
