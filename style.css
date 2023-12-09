@@ -3,8 +3,15 @@ body {
   padding: 0;
   font-family: "Inter", sans-serif;
 }
+a{
+  text-decoration: none;
+  
+}
 .color {
   color: #a706f8;
+}
+.colorWhite{
+  color: white;
 }
 .bg {
   background-color: #a706f8;
@@ -41,6 +48,20 @@ body {
 .trip li:hover{
   color: #a706f8;
   cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.spanBorder{
+  padding: 25px 70px 25px 70px;
+  border: 1px solid #a706f8;
+  /* padding: 24px; */
+  border-radius: 10px;
+  /* margin-top:0px; */
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 /* input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
@@ -120,22 +141,23 @@ body {
   justify-content: center;
 }
 .tagline h1 {
-  font-size: 3em;
-  color: rgb(169, 237, 226);
-  font-weight: bold;
+  color: rgb(82, 39, 77);
+  font-weight: 500;
   text-align: center;
   /* align-items: center; */
   margin: 0;
 
-  font-size: 50px;
+  font-size: 75px;
+  text-shadow: 3px 2px 4px rgba(255, 255, 255, 0.915);
 }
 .tagline p {
   font-size: 1em;
   margin-left: 150px;
-  color: rgb(169, 54, 54);
+  color: rgb(0, 0, 0);
   font-size: 25px;
   margin: 0;
   text-align: center;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.915)
   /* align-items: center; */
 
   /* margin-top: 200px;
@@ -256,7 +278,7 @@ body {
   justify-content: space-between;
 }
 .day{
-  margin-top: -6px;
+  margin-top: -9px ;
 }
 .dateInput{
   margin-top: -3px;
@@ -310,10 +332,9 @@ body {
   margin-bottom: 20px; 
 }
 .direction-logo {
-  height: 30px;
-  width: 40px;
+  font-size: 30px;
   position: relative;
-  top: 30px;
+  top: 35px;
 }
 input {
   background-color: rgba(128, 0, 128, 0);;
@@ -360,20 +381,26 @@ input {
   background-repeat: no-repeat;
   margin: 10px;
 }
+.feature hr{
+  width: 13vw;
+  margin-left: 0px;
+}
 
 .feature.text {
   border-radius: 25px;
   height: 500px; /* 80% of the viewport height */
   width: 320px;
 }
+
 .feature.text h1 {
-  font-size: 50px;
+  font-weight: 400;
+  font-size: 37px;
   color: rgb(0, 0, 0);
   align-items: center;
 }
 .feature.text p {
-  font-size: 20px;
-  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 500;
   align-items: center;
 }
 
@@ -391,54 +418,60 @@ input {
   text-align: center;
   background: url("/images/tourism.jpg") center/cover no-repeat;
   border-radius: 25px;
+  height: 884px;
 }
 
+.grid-item1 {
+  padding: 33px;
+  height: 154px;
+  margin-bottom: 21px;
+  border-radius: 13px;
+  background: url("./images/sea.jpg") center/cover no-repeat;
+}
+.grid-item2 {
+  height: 154px;
+  margin-bottom: 21px;
+  border-radius: 13px;
+  background: url("./images/sea.jpg") center/cover no-repeat;
+  padding: 33px;
+}
 .grid-item3 {
-  padding: 33px;
-  height: 154px;
-  margin-bottom: 21px;
-  border-radius: 13px;
-  background: url("./images/sea.jpg") center/cover no-repeat;
-}
-.grid-item4 {
-  height: 154px;
-  margin-bottom: 21px;
-  border-radius: 13px;
-  background: url("./images/sea.jpg") center/cover no-repeat;
-  padding: 33px;
-}
-.grid-item5 {
   height: 320px;
   margin-bottom: 21px;
   border-radius: 13px;
   background: url("./images/sea.jpg") center/cover no-repeat;
   padding: 34px;
 }
-
-.grid-item8 {
-  height: 154px;
-  margin-bottom: 21px;
-  border-radius: 13px;
-  background: url("./images/sea.jpg") center/cover no-repeat;
-
-  padding: 34px;
-}
-.grid-item9 {
-  height: 154px;
-  margin-bottom: 21px;
-  border-radius: 13px;
-  background: url("./images/sea.jpg") center/cover no-repeat;
-  padding: 34px;
-}
-
-.grid-item10 {
+.grid-item4 {
   background: url("./images/tajmahals.jpg") center/cover no-repeat;
   height: 300px;
   margin-bottom: 21px;
   border-radius: 13px;
-  /* background-color: #db344d; */
   padding: 33px;
 }
+.grid-small{
+  height: 170px;
+  margin-bottom: 21px;
+  border-radius: 13px;
+  background: url("./images/sea.jpg") center/cover no-repeat;
+
+  padding: 34px;
+}
+.grid-item6 {
+  height: 154px;
+  margin-bottom: 21px;
+  border-radius: 13px;
+  background: url("./images/sea.jpg") center/cover no-repeat;
+  padding: 34px;
+}
+.grid-item7 {
+  background: url("./images/tajmahals.jpg") center/cover no-repeat;
+  height: 333px;
+  margin-bottom: 21px;
+  border-radius: 13px;
+  padding: 33px;
+}
+
 .my-button {
   display: inline-block;
   padding: 10px 20px;
@@ -485,15 +518,20 @@ input {
 
 .card img {
   /* width: 80%; */
-  width: fit-content;
-  height: 18rem;
+  height: 15rem;
+  width: 20rem;
   object-fit: cover;
+
   border-radius: 20px;
 }
 .location {
   position: relative;
   left: 20px;
   bottom: 55px;
+  color:white;
+}
+.card-content {
+  margin-top: -27px;
 }
 
 .card__content h1 {
@@ -552,11 +590,7 @@ button {
   font-size: 16px;
   gap: 100px;
 }
-.city {
-  border: 1px solid #a706f8;
-  justify-content: center;
-  /* border: 1px solid black; */
-}
+
 
 /* Define the grid container */
 .gridContainer2 {
@@ -577,8 +611,26 @@ button {
 .child1 {
   /* background-color: red; */
   background-size: cover;
-  background-image: url(https://contile-images.services.mozilla.com/Lbtwp8lOwiYh9vxiwPInJ_U7mlWtWHU5_yHpcziM01U.10324.jpg);
+
   border-radius: 10px 0px 0px 10px;
+}
+.child1.img1{
+  background-image: url("/images/1.jpg");
+}
+.child1.img2{
+  background-image: url("/images/kanyakumari.jpg");
+}
+.child1.img3{
+  background-image: url("/images/2.jpg");
+}
+.child1.img4{
+  background-image: url("/images/1.jpg");
+}
+.child1.img5{
+  background-image: url("/images/kanyakumari.jpg");
+}
+.child1.img6{
+  background-image: url("/images/2.jpg");
 }
 /* .child1{
 background-color: rgb(255, 5, 5)(255, 242, 0);
@@ -681,6 +733,58 @@ div.newsImages2{
 .text{
   display: inline;
 }
+
+/* Subscribe input *****************************************************************************************************************************************/
+.newsLetter{
+  background-color: rgba(118, 118, 118, 0.085);
+}
+.subscribe{
+  margin-top: 50px;
+}
+.subscribe h1{
+  margin-top: -13px;
+  font-weight: 500;
+  font-size: 37px;
+}
+.subscribe p{
+  font-weight: 500;
+  font-size: 18px;
+}
+.newsLetter{
+  display: flex;
+  flex-direction: row;
+  padding: 100px;
+}
+.subscribeInput{
+  margin-top: 58px;
+  margin-left: 113px;
+}
+
+#letterIcon {
+  font-size: 199px;
+  margin-top: -13px;
+}
+.subscribeText{
+  border:none;
+  padding: 27px;
+  background-color: #fff;
+} 
+.subscribeText::placeholder{
+   color: #a706f8;
+}
+.subscribeBtn{
+  border: none;
+  margin: 0px;
+  border-radius: 0px 15px 15px 0px;
+padding: 27px 55px 27px 46px;
+
+}
+.letterIcon{
+  width: 211px;
+  height: 200px;
+  /* background-color: red; */
+}
+
 /* Footer ***********************************************************************************************************************************/
 
 #footer * {
@@ -690,17 +794,14 @@ div.newsImages2{
 }
 .container {
   max-width: 1170px;
-  background-color: red;
+
   margin: auto;
 }
 .row {
   display: flex;
-  flex-wrap: wrap;
+
 }
-ul {
-  list-style: none;
-  padding-left: 10px;
-}
+
 .footer {
   padding: 70px 15px;
 }
@@ -709,19 +810,22 @@ ul {
   padding: 0;
 }
 .footer-col h4 {
-  font-size: 18px;
+  /* font-weight: 900; */
+/* background-color: red; */
+  font-size: 17px;
   text-transform: capitalize;
   margin-bottom: 35px;
-  font-weight: 500;
+  font-weight: 600;
   position: relative;
   padding-left: 10px;
 }
 .footer-col h4::before {
   content: "";
+  font-weight: 700;
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: #e91e63;
+ 
   height: 2px;
   box-sizing: border-box;
   width: 40px;
@@ -730,18 +834,37 @@ ul {
   margin-bottom: 10px;
 }
 .footer-col ul li a {
-  font-size: 16px;
+
+  font-size: 14px;
   text-transform: capitalize;
 
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 600;
 
   display: block;
   transition: all 0.3s ease;
 }
+.footer-col{
+  margin-right: 65px;
+}
+.hrFooter{
+  margin: -13px;
+  margin-left: 10px;
+}
+.hrRotated{
+  transform: rotate(90deg);
+  height: 0px;
+  width: 50px;
+  position: relative;
+  left: -150px;
 
+  top: 31px;
+}
 .footer-col ul li a:hover {
   padding-left: 8px;
+}
+.footer-col b{
+  font-size: 19px;
 }
 .social-link {
   display: flex;
@@ -750,7 +873,7 @@ ul {
   display: inline-block;
   height: 40px;
   width: 40px;
-  background-color: rgba(128, 4, 4, 0.2);
+  /* background-color: rgba(128, 4, 4, 0.2); */
   margin: 0 10px 10px 0;
   text-align: center;
   line-height: 40px;

@@ -11,7 +11,7 @@ function updateDay(inputType) {
   
   const startResultElement = document.getElementById('day');
   const endResultElement = document.getElementById('returnDay');
-  console.log(endResultElement.value);
+  console.log(endDateInput.value);
 
   const startDate = startDateInput.value ? new Date(startDateInput.value) : new Date();
   const endDate = endDateInput.value ? new Date(endDateInput.value) : new Date();
@@ -42,3 +42,21 @@ document.addEventListener('DOMContentLoaded', () => {
   // console.log(start,end);
   
 });
+
+function change(){
+  const departLocation= document.getElementById("departLocation");
+  const departAirport= document.getElementById("departAirport");
+  
+  
+  const destinationLocation= document.getElementById("destinationLocation");
+  const destinationAirport= document.getElementById("destinationAirport");
+  const DLval=destinationLocation.textContent;
+  const DAval=destinationAirport.value;
+
+  destinationLocation.textContent=departLocation.textContent;
+  departLocation.textContent=DLval;
+
+  destinationAirport.value=departAirport.value;
+  departAirport.value=DAval;
+  console.log('change clicked');
+}

@@ -46,7 +46,7 @@
     </div>
 
 
-    <!-- Flight Search -->
+    <!-- Flight Search ---------------------------------------------------------------------------------------------------------------------------------------------->
 
     
     <div class="flightDetails">
@@ -85,11 +85,7 @@
       
         <div class="flight-check depart">
 
-            <!-- <span class="flightInputTop">To</span>
-            <span>
-              <i class="fa-solid fa-plane-arrival logo-align"></i>
-       
-            </span> -->
+         
 
 
            <span class="flightInputTop">From</span>
@@ -97,18 +93,18 @@
             <i class="fa-solid fa-plane-departure logo-align"></i>
             
            </span>
-           <input class="flightInputMid" type="text" name="" id="" value="New York">
+           <input class="flightInputMid" type="text" name="departAirport "value="New York" id="departAirport">
           
            <div>
-            <p class="flightInputBottom flightInputBottomLeft">JFK-john F.kennedy international</p>
+            <p class="flightInputBottom" id="departLocation">JFK-john F.kennedy international</p>
            </div>
       
         </div>
         <div>
-           <img src="https://static.vecteezy.com/system/resources/previews/021/021/190/non_2x/right-direction-and-left-direction-arrow-icon-vector.jpg"
+           <!-- <img class="" src="https://static.vecteezy.com/system/resources/previews/021/021/190/non_2x/right-direction-and-left-direction-arrow-icon-vector.jpg" 
+           /> -->
            
-           class="direction-logo"/>
-           
+           <i class="fa fa-exchange direction-logo" aria-hidden="true"  onclick="change()" ></i>
         </div>
         <div class="flight-check arrive" >
             <span class="flightInputTop">To</span>
@@ -116,9 +112,9 @@
               <i class="fa-solid fa-plane-arrival logo-align"></i>
        
             </span>
-            <input  class="flightInputMid" type="text" name="" id="" value="London">
+            <input  class="flightInputMid" type="text" name="" id="destinationAirport" value="London">
             <div>
-             <p class="flightInputBottom flightInputBottomLeft">LCY,London city airport</p>
+             <p class="flightInputBottom flightInputBottomLeft" id="destinationLocation">LCY,London city airport</p>
             </div>
       
          </div>
@@ -129,22 +125,12 @@
               <input class="flightInputMid dateInput" type="date" id="dateInput"  name="dateInput" onchange="updateDay()">
               <p id="day" class="flightInputBottom " > Friday</p>
             </div>
-            <div> 
+            <div class="day" > 
               <p class="flightInputTop  ">Journey date</p>
               <input  class="flightInputMid dateInput" type="date" id="dateInputReturn" name="dateInput" onchange="updateDay()">
               <p id="returnDay" class="flightInputBottom " >Friday</p>
             </div>
-<!-- 
-            <span class="flightInputTop">Journey date  </span>
-                <span class="flightInputTop jleft ">Journey date</span>
-          
-               <span> <input class="flightInputMid dateInput" type="date" id="dateInput"  name="dateInput" onchange="updateDay()"> <input  class="flightInputMid" type="date" id="dateInputReturn" name="dateInput" onchange="updateDay()"></span>
-               
-           
-              <span class="dayMargin">
 
-                <span id="day" class="flightInputBottom day" > Friday</span>&nbsp;<span id="returnDay" class="flightInputBottom day-right" >Friday</span>
-              </span> -->
            
              
        
@@ -152,17 +138,9 @@
      
         </div>
          <div class="passenger">
-            <span class="flightInputTop">Passenger,Class</span>
-          
-            <div >
-            <p  class="flightInputMid">0 Passenger</p>
-            </div>
-            <div>
-           <span class="flightInputBottom flightInputBottomLeft"> Economy</span>
-           
-             
-            </div>
-      
+            <p class="flightInputTop">Passenger,Class</p>
+            <p  class="flightInputMid">0 Passenger</p> 
+            <p class="flightInputBottom"> Economy</p>
          </div>
         
         
@@ -190,7 +168,7 @@
       </div>
 
       
-
+<!-- Top Destinaton ------------------------------------------------------------------------------------------------------------------------------------->
       
 
     <div class="topdestination">
@@ -200,20 +178,20 @@
           <div class="topDestinationItem1"></div>
 
           <div >
-            <div class="grid-item3"></div>
+            <div class="grid-small"></div>
+            <div class="grid-small"></div>
             <div class="grid-item4"></div>
-            <div class="grid-item5"></div>
         </div>
  
         <div >
-            <div class="grid-item10"></div>
-            <div class="grid-item8"></div>
-            <div class="grid-item9"></div>
+            <div class="grid-item4"></div>
+            <div class="grid-small"></div>
+            <div class="grid-small"></div>
         </div>
         
         <div>
-            <div class="grid-item10">9</div>
-            <div class="grid-item10">9</div>
+            <div class="grid-item7">9</div>
+            <div class="grid-item7">9</div>
          
           <button class="btn2 bg">View Me</button>
         </div>
@@ -330,15 +308,19 @@
     <div class="destination">
       <h1 class="center"> Destination for you</h1>
         <hr>
+
+       
         
-      <div class="city center">
-        <button class="btn">Chennai</button>
-        <button class="btn" >Bangalore </button>
-        <button class="btn"> Hyderabad</button>
-        <button class="btn"> Delhi</button>
-        <button class="btn">  Mumbai</button>
-        <button class="btn">Kolkata</button>
-        <button class="btn">Bihar </button>
+      <div class="center">
+        <span class="spanBorder">
+          <button class="btn">Chennai</button>
+          <button class="btn" >Bangalore </button>
+          <button class="btn"> Hyderabad</button>
+          <button class="btn"> Delhi</button>
+          <button class="btn">  Mumbai</button>
+          <button class="btn">Kolkata</button>
+          <button class="btn">Bihar </button>
+        </span>
     </div>
     
     
@@ -346,7 +328,7 @@
       <div class="gridContainer2">
       
         <div class="grid-item gridChild">
-            <div class="child1"> </div>
+            <div class="child1 img1"> </div>
             <div class="child2"> <b class="color">Chennai</b>
                 <br>
                 Price starts at <span class="color"> &#8377 56.00</span>
@@ -356,7 +338,7 @@
         </div>
     
         <div class="grid-item gridChild">
-            <div class="child1"> </div>
+            <div class="child1 img2"> </div>
             <div class="child2"> <b class="color">Bangalore</b>
                 <br>
                 Price starts at <span class="color"> &#8377 56.00</span>
@@ -364,14 +346,14 @@
     </div>
         <!-- Row 2 -->
         <div class="grid-item gridChild">
-            <div class="child1"> </div>
+            <div class="child1 img3"> </div>
             <div class="child2"> <b class="color">Hyderabad</b>
                 <br>
                 Price starts at <span class="color"> &#8377 56.00</span>
             </div> 
     </div>
     <div class="grid-item gridChild">
-        <div class="child1"> </div>
+        <div class="child1 img4"> </div>
         <div class="child2"><b class="color"> Mumbai</b>
             <br>
                 Price starts at <span class="color">&#8377 56.00</span>
@@ -380,14 +362,14 @@
     
         
         <div class="grid-item gridChild">
-            <div class="child1"> </div>
+            <div class="child1 img5"> </div>
             <div class="child2"> <b class="color">Delhi</b>
                 <br>
                 Price starts at <span class="color">&#8377 56.00</span>
             </div> 
         </div>
         <div class="grid-item gridChild">
-            <div class="child1"> </div>
+            <div class="child1 img6"> </div>
             <div class="child2"> <b class="color"> Kolkata</b>
                 <br>
                 Price starts at <span class="color">&#8377 56.00</span> 
@@ -466,7 +448,8 @@
              <div class="heading7">
                  <h1>Australia's most famous attraction turns 50</h1>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, vero fugiat! Quia officiis deleniti, cum consectetur corrupti, at, sit voluptate dolorum dolore in voluptatibus quidem dolor aliquid officia asperiores similique?</p>
-             </div>
+                <p> <a class="color" href="#">Read All Article</a> </p>
+                </div>
      
  
      </div>
@@ -476,18 +459,46 @@
  </div>
  </div>
 
+
+<!-- Subscribe news letter -------------------------------------------------------------------------------------------------------------------------------->
+<div class="newsLetter">
+  <div class="letterIcon">
+    <i class="far fa-envelope-open" id="letterIcon"> </i>
+    <!-- <i class="fal fa-envelope-open" ></i> -->
+  </div>
+  <div class="subscribe">
+    <p class="color">
+      Get the lestest new and offer
+    </p>
+    <h1>
+      Subscribe to our newsletter
+    </h1>
+  </div>
+  <div class="subscribeInput">
+    <input class="subscribeText color" type="text" placeholder="Enter Your Email Address"><input class="subscribeBtn bg colorWhite" type="button" value="Subscribe">
+  </div>
+</div>
+
+ <!-- footer ----------------------------------------------------------------------------------------------------------------------------------------------------->
     
     <footer class="footer">
       
         <div class="continer">
             <div class="row">
-                <div class="footer-col">
-                    <h4>Need any help</h4>
+                <div class="footer-col col1   ">
+                    <h4>Need any help?
+                     
+                    </h4>
+                    <hr class="hrFooter">
                     <ul>
-                       <li><a href="#">Call 24/7 fro any help</a></li>
-                       <li><a href="#">+91-988-818-1841</a></li>
+                      <hr class="hrRotated">
+                       <li><a href="#"> Call 24/7 fro any help</a></li>
+                       <li><a href="#"><b class="color">+91-988-818-1841</b></a></li>
+                       <!-- <hr class="hrRotated"> -->
+                       <hr class="hrRotated">
                        <li> Mail to our support team</li>
-                       <li>Support@flightshubexcursion</li>
+                       <li><b class="color">Support@flightshubexcursion</b></li>
+                       <hr class="hrRotated">
                        <li>follow on us</li>   
                        <li>     
                         <div class="social-link">
@@ -504,6 +515,7 @@
 
                 <div class="footer-col">
                     <h4>Populer Airlines</h4>
+                    <hr class="hrFooter">
                     <ul>
                        <li><a href="#">Alaska Airlines</a></li>
                        <li><a href="#">United Airlines</a></li>
@@ -514,6 +526,7 @@
                 </div>
                 <div class="footer-col">
                     <h4>Top Cities</h4>
+                    <hr class="hrFooter">
                     <ul>
                        <li><a href="#">Chicago </a></li>
                        <li><a href="#">New York</a></li>  
@@ -524,6 +537,7 @@
                 </div>
                 <div class="footer-col">
                     <h4>Useful Links</h4>
+                    <hr class="hrFooter">
                     <ul>
                        <li><a href="#">Ewd eye Flights</li><a></li> 
                        <li><a href="#">Economy Flights</a></li>
@@ -534,6 +548,7 @@
                 </div>
                 <div class="footer-col">
                     <h4>Quick Links</h4>
+                   <hr class="hrFooter">
                     <ul>
                         <li><a href="#">About Us</a></li>  
                        <li><a href="#">Terms & Conditions</li><a></li> 
