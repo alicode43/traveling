@@ -429,7 +429,7 @@ input {
 
 .topDestinationItem1 {
   text-align: center;
-  background: url("/images/tourism.jpg") center/cover no-repeat;
+  background: url("/images/tourism.jpg ") center/cover no-repeat;
   border-radius: 25px;
   height: 884px;
 }
@@ -711,6 +711,10 @@ hr{
   height: 100px;
   position: relative;
   left: 0px;
+}
+.newsGrid .btn2{
+  height: 34px;
+  width: 96px;
 }
 
 .newsImages3{
